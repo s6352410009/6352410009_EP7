@@ -1,48 +1,45 @@
-// Funtion การทำงานหนึ่ง *****
-// Funtion จะไม่ทำงานถ้าเราไม่ call function (เรียกใช้ ฟังก์ชัน)
-//1 ไม่ส่งค่า ไม่มีพารามิเตอร์
-function funcNa(){
-
-
+//Function การทำงานหนึ่งหนี่ง ************
+//Function จะไม่ทำงานถ้าเราไม่ call function (เรียกใช้ ฟังก์ชั้น)
+//1 ไม่ส่งค่ากลับ  ไม่มีพารามิเตอร์
+function funna(){
+    console.log("Na na na ....")
 }
 
 
-//2 ไม่ส่งค่า มีพารามิเตอร์
-function funcNi(x,y){
-    let  a = x + y 
-    console.log ("a มีค่า" + a)
-
+//2 ไม่ส่งค่ากลับ  มีพารามิเตอร์
+function funnu(x , y){   //x,y เรียก พารามิเตอร์
+    let a=x+y
+    console.log("a มีค่า " + a)
 }
 
 
-//3 ส่งค่า ไม่มีพารามิเตอร์
-function funcWoW(){
-    
+//3 ส่งค่ากลับ  ไม่มีพารามิเตอร์
+function funku(){
+
     return 999 + 1;
 }
 
-
-//4 ส่งค่ากลับ มีพารามิเตอร์
-function funcWee(x,y,z){
+//4 ส่งค่ากลับ  มีพารามิเตอร์
+function funhu( x , y , z){
     let sum = x + y + z
-    return 555 + sum;
+    return 555+sum;
 }
 
-funcNa()
-funcNi(10,20)// 10,20 เรียก อากิวเมนต์
+funna()
+funnu(10,20)  //10,20 เรียก อากิวเมนต์
 
-console.log(funcWoW())
+console.log(funku()) 
 
-let total = funcWee(10,20,30)
-//alert(total)
+let total = funhu( 10 , 20 , 30 )
+console.log( total )
 
 
 
-function funcA(x,y = 20){
-    console.log(x + y)
+////------------------------------------------------------
+function funA(x , y = 20){
+    console.log( x + y )
 }
+funA(10,100)
+funA(50)
 
-funcA(10,100)
-funcA(50)
-
-
+//-----------------------------------------------------------
